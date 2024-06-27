@@ -1,0 +1,168 @@
+use colegioGates;
+
+db.createCollection("estudiantes");
+
+// Crear colecciones e insertar datos
+
+db.estudiantes.insertMany([
+  {
+    "nombre_completo": "samuel villarreal duque",
+    "correo_electronico": "sam@gmail.com",
+    "numero_documento": "1245876985",
+    "tipo_documento": "C.C.",
+    "fecha_nacimiento": "2000-01-29",
+    "curso": "once",
+    "jornada": "am",
+    "asignaturas": [
+    "matematicas",
+    "ingles",
+    "español"
+    ]
+  },
+  {
+    "nombre_completo": "daniel alejandro cano cardona",
+    "correo_electronico": "daniel@gmail.com",
+    "numero_documento": "1452367890",
+    "tipo_documento": "C.C.",
+    "fecha_nacimiento": "2003-02-25",
+    "curso": "once",
+    "jornada": "am",
+    "asignaturas": [
+    "tecnologia",
+    "ingles",
+    "español"
+    ]
+  },
+  { 
+   "nombre_completo": "joan zapata caro",
+    "correo_electronico": "zapatacarojoan@gmail.com",
+    "numero_documento": "8457621390",
+    "tipo_documento": "T.I.",
+    "fecha_nacimiento": "2005-12-24",
+    "curso": "decimo",
+    "jornada": "pm",
+    "asignaturas": [
+    "e.d. fisica",
+    "ingles",
+    "quimica"
+    ]
+  },
+  {
+    "nombre_completo": "natalia rodriguez benavides",
+    "correo_electronico": "natarob@gmail.com",
+    "numero_documento": "5496321781",
+    "tipo_documento": "C.C.",
+    "fecha_nacimiento": "2001-08-22",
+    "curso": "once",
+    "jornada": "am",
+    "asignaturas": [
+    "ciencias",
+    "ingles",
+    "artes"
+    ]
+  },
+  {
+    "nombre_completo": "maria alejandra buritica cano",
+    "correo_electronico": "mariaburitica@gmail.com",
+    "numero_documento": "1245876985",
+    "tipo_documento": "T.I.",
+    "fecha_nacimiento": "2010-05-16",
+    "curso": "noveno",
+    "jornada": "am",
+    "asignaturas": [
+    "matematicas",
+    "ingles",
+    "español"
+    ]
+  }
+]);
+
+db.createCollection("profesores");
+
+db.profesores.insertMany([
+  {
+    "nombre_completo": "mario alfonso escobar",
+    "correo_electronico": "alfonso@gmail.com",
+    "numero_documento": "1234568219",
+    "tipo_documento": "C.C.",
+    "fecha_nacimiento": "1990-05-24",
+    "curso": "once",
+    "jornada": "AM",
+    "asignaturas": [
+    "matematicas, ingles, español, sociales"
+    ]
+  },
+  {
+    "nombre_completo": "javier reyes",
+    "correo_electronico": "reyes@gmail.com",
+    "numero_documento": "1356024895",
+    "tipo_documento": "C.C.",
+    "fecha_nacimiento": "1992-07-15",
+    "curso": "decimo",
+    "jornada": "PM",
+    "asignaturas": [
+    "tecnologia, ingles, español, sociales"
+    ]
+  },
+  { 
+    "nombre_completo": "liliana patiño",
+    "correo_electronico": "patiño@gmail.com",
+    "numero_documento": "2546982456",
+    "tipo_documento": "C.C.",
+    "fecha_nacimiento": "1987-11-21",
+    "curso": "once",
+    "jornada": "AM",
+    "asignaturas": [
+    "matematicas, ingles, español"
+    ]
+  },
+  {
+    "nombre_completo": "gilberto roman",
+    "correo_electronico": "roman@gmail.com",
+    "numero_documento": "4587965236",
+    "tipo_documento": "C.C.",
+    "fecha_nacimiento": "1985-04-18",
+    "curso": "noveno",
+    "jornada": "PM",
+    "asignaturas": [
+    "matematicas, ingles, ciencias naturales"
+    ]
+  },
+  {
+    "nombre_completo": "albertico galvis",
+    "correo_electronico": "galvis@gmail.com",
+    "numero_documento": "7689452136",
+    "tipo_documento": "C.C.",
+    "fecha_nacimiento": "1979-08-14",
+    "curso": "octavo",
+    "jornada": "AM",
+    "asignaturas": [
+    "ingles, español"
+    ]
+  }
+]);
+
+db.createCollection("cursos");
+
+db.cursos.insertMany([
+    {
+        "once": {
+            "jornada": "am"
+        }
+    },
+    {
+        "decimo": {
+            "jornada": "pm"
+        }
+    },
+    {
+        "noveno": {
+            "jornada": "am"
+        }
+    },
+    {
+        "octavo": {
+            "jornada": "pm"
+        }
+    }
+]);

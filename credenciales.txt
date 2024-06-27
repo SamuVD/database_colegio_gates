@@ -1,0 +1,3 @@
+mongodb+srv://first_NoSQL:<password>@colegiogatesnosql.qok4lsm.mongodb.net/
+
+password: mongoPOPESVD6505
